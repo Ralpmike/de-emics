@@ -35,8 +35,8 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hamburger" onClick={handleChange}>
-            {!state ? <FaBars size={30} color='blue' /> :
-              <FaTimes size={30} color="blue" />}
+            {!state ? <FaBars size={30} color='white' /> :
+              <FaTimes size={30} color="white" />}
           </div>
         </div>
       </div>

@@ -20,7 +20,7 @@ const HomesServices = ({servicsLink}) => {
           maximum enjoyment.
           Each room is meticulously crafted to epitomize contemporary elegance, with every detail thoughtfully curated to provide the utmost in comfort and sophistication. Whether you're seeking a peaceful retreat or a lavish escape, our accommodations are designed to exceed your expectations, offering a harmonious blend of modern luxury and timeless charm.
         </p>
-        <Link to={servicsLink} className='btn-primary'>Know More</Link>
+       {servicsLink && <Link to={servicsLink} className='btn-primary'>Know More</Link>}
       </div>
       <div className='homes-services-img'>
         <img src={img1} alt="img1" />

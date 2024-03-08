@@ -30,7 +30,7 @@ const HomeAboutCard = ({link}) => {
             amenities, including top-notch airconditioning to ensure your stay is always
             cool and comfortable.</span>
         </p>
-        <Link to={link} className='btn-primary'>Know More</Link >
+        {link && <Link to={link} className='btn-primary'>Know More</Link>}
       </div>
       <div className='home-about-img'>
         <img src={Imgone} alt="imgOne" />
