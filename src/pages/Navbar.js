@@ -29,7 +29,7 @@ const Navbar = () => {
               <NavLink to="contact">Contact Us</NavLink>
             </nav>
             <div className="socials">
-              <span style={{ fontSize: "16px" }}> <FaPhone size={20} color="#FEA116"/> +23408036056588</span>
+              <span style={{ fontSize: "16px" }}> <FaPhone size={20} color="#FEA116" /> +23408036056588</span>
               <FaFacebook size={20} color="#FEA116" />
               <FaWhatsapp size={20} color="#FEA116" />
             </div>
@@ -44,7 +44,7 @@ const Navbar = () => {
         <Outlet />
       </main>
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </div>
   );

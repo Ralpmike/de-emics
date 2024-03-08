@@ -363,7 +363,7 @@ form textarea {
   align-items: center;
   justify-content: space-between;
   padding: 20px 40px;
-  height: 50vh;
+  /* height: 50vh; */
 }
 
 .footer .links,
@@ -410,7 +410,6 @@ form textarea {
   .meal-services {
     flex-direction: column;
     gap: 20px;
-    margin: 80px 30px;
   }
   .homes-services .homes-services-img img,
   .meal-services-img img,
@@ -418,6 +417,7 @@ form textarea {
   .home-about-img img 
   {
     width: 100%;
+    justify-content: flex-start;
   }
   .homes-services-img img:last-child{
     max-width: 50px;
@@ -432,10 +432,17 @@ form textarea {
   .our-rooms {
     flex-direction: column;
     gap: 20px;
+    width: 100%;
     /* margin: 80px 30px; */
   }
-  .our-rooms .rooms img, .our-rooms .rooms p {
+  .our-rooms .rooms img{
     width: 100%;
+    /* font-size: 20px; */
+  }
+  .our-rooms .rooms p {
+    align-self: flex-start;
+    max-width: 100%;
+    
   }
 
 
@@ -444,12 +451,11 @@ form textarea {
   /* Footer responsiveness */
   .footer {
     flex-direction: column;
-    height: 80vh;
     align-items: center;
     justify-content: center;
     gap: 10px;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
   }
 
   .footer .links,
@@ -461,6 +467,21 @@ form textarea {
 }
 .footer ul h6 {
   font-size: 23px;
+}
+.vision .vision-statement,
+.meal-services .meal-services-statement,
+.homes-services .homes-services-statement,
+.home-about 
+
+{
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+ 
+}
+.mission{
+  align-items: flex-start;
+  width: 100%;
 }
 
   /* End of Footer responsiveness */
